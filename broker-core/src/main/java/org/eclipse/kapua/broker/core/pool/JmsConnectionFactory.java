@@ -42,7 +42,7 @@ public class JmsConnectionFactory {
         // https://access.redhat.com/documentation/en-US/Fuse_ESB_Enterprise/7.1/html/ActiveMQ_Tuning_Guide/files/GenTuning-Colocate.html
         // TODO parameter to be added to configuration
         // connectionFactoryUri = "vm://" + KapuaEnvironmentConfig.getInstance().getString(KapuaEnvironmentConfigKeys.BROKER_NAME) + "?create=false&waitForStart=3600000&async=true";
-        connectionFactoryUri = "vm://kapua?create=false&waitForStart=3600000&async=true";
+        connectionFactoryUri = "vm://kapua?create=false&waitForStart=30000&async=true";
         logger.info("Using connection factory url: " + connectionFactoryUri);
 
         // connection factory
