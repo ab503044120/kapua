@@ -172,7 +172,7 @@ public class TriggerServiceImpl extends AbstractKapuaConfigurableResourceLimited
                 throw new KapuaIllegalAccessException(action.name());
             }
 
-            if (settings.getString(SystemSettingKey.SYS_ADMIN_ACCOUNT).equals(triggerx.getName())) {
+            if (settings.getString(SystemSettingKey.SYS_ADMIN_USERNAME).equals(triggerx.getName())) {
                 throw new KapuaIllegalAccessException(action.name());
             }
 
