@@ -63,7 +63,7 @@ public class KapuaCamelFilter extends AbstractListener {
      * 
      * @param exchange
      * @param value
-     * @throws KapuaExceptionv
+     * @throws KapuaException
      */
     public void unbindSession(Exchange exchange, Object value) throws KapuaException {
         KapuaSecurityUtils.clearSession();
