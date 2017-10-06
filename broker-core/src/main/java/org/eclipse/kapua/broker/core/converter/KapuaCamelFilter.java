@@ -63,10 +63,29 @@ public class KapuaCamelFilter extends AbstractListener {
      * 
      * @param exchange
      * @param value
-     * @throws KapuaException
+     * @throws KapuaExceptionv
      */
     public void unbindSession(Exchange exchange, Object value) throws KapuaException {
         KapuaSecurityUtils.clearSession();
     }
 
+    /**
+     * Bridge the error condition putting the in the JmsMessage header (At the present only the Exception raised is handled by this method)
+     * 
+     * @param exchange
+     * @param value
+     */
+    public void bridgeError(Exchange exchange, Object value) {
+        // TODO is the in message null check needed?
+        if (exchange.getIn() != null && exchange.getIn().getExchange().getException() != null) {
+            exchange.getIn().setHeader(MessageConstants.HEADER_KAPUA_PROCESSING_EXCEPTION,
+                    Base64.getEncoder().encodeToString(SerializationUtils.serialize(exchange.getIn().getExchange().getException())));
+        } else if (exchange.getException() != null) {
+            exchange.getIn().setHeader(MessageConstants.HEADER_KAPUA_PROCESSING_EXCEPTION,
+                    Base64.getEncoder().encodeToString(SerializationUtils.serialize(exchange.getException())));
+        }
+        else {
+            logger.debug("Cannot serialize exception since it is null!");
+        }
+    }
 }
