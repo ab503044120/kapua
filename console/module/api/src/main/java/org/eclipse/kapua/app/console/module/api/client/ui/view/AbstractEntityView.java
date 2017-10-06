@@ -20,6 +20,7 @@ import org.eclipse.kapua.app.console.module.api.client.ui.panel.EntityFilterPane
 import org.eclipse.kapua.app.console.module.api.client.ui.panel.KapuaBorderLayoutData;
 import org.eclipse.kapua.app.console.module.api.client.ui.panel.KapuaTabPanel;
 import org.eclipse.kapua.app.console.module.api.client.ui.view.descriptor.TabDescriptor;
+import org.eclipse.kapua.app.console.module.api.client.util.FailureHandler;
 import org.eclipse.kapua.app.console.module.api.shared.model.GwtEntityModel;
 
 import com.extjs.gxt.ui.client.Style.LayoutRegion;
@@ -99,7 +100,7 @@ public abstract class AbstractEntityView<M extends GwtEntityModel> extends Abstr
             @Override
             public void onFailure(Throwable caught) {
                 // TODO Manage
-                System.out.println("Failure!");
+                FailureHandler.handle(caught);
             }
 
             @Override
