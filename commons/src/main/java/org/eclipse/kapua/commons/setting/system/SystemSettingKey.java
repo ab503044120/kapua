@@ -11,9 +11,9 @@
  *******************************************************************************/
 package org.eclipse.kapua.commons.setting.system;
 
-import javax.persistence.EntityExistsException;
-
 import org.eclipse.kapua.commons.setting.SettingKey;
+
+import javax.persistence.EntityExistsException;
 
 /**
  * Setting system key implementation.
@@ -172,7 +172,7 @@ public enum SystemSettingKey implements SettingKey {
     KAPUA_KEY_SIZE("commons.entity.key.size"),
 
     /**
-     * Maximum allowed retry (due to a {@link EntityExistsException}, so already exists key) on insert operation
+     * Maximum allowed retry (due to a {@link EntityExistsException}, so already exists key) on insert notification
      */
     KAPUA_INSERT_MAX_RETRY("commons.entity.insert.max.retry");
 

@@ -41,7 +41,7 @@ import org.eclipse.kapua.service.tag.Tag;
 import org.eclipse.kapua.service.tag.TagService;
 
 /**
- * Provides logic used to validate preconditions required to execute the device service operation.
+ * Provides logic used to validate preconditions required to execute the device service notification.
  *
  * @since 1.0.0
  */

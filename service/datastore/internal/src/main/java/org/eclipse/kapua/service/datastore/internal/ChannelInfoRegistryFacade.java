@@ -72,7 +72,7 @@ public class ChannelInfoRegistryFacade {
     }
 
     /**
-     * Update the channel information after a message store operation
+     * Update the channel information after a message store notification
      * 
      * @param channelInfo
      * @return

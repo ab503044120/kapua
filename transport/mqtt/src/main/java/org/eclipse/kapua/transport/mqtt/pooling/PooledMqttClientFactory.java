@@ -38,7 +38,7 @@ public class PooledMqttClientFactory extends BasePooledObjectFactory<MqttClient>
      * Creates the {@link MqttClient} for the {@link MqttClientPool}.
      * 
      * <p>
-     * The client is initialized and connected. In case of any failure on connect operation, an exception is thrown and the the created client is destroyed.
+     * The client is initialized and connected. In case of any failure on connect notification, an exception is thrown and the the created client is destroyed.
      * </p>
      * 
      * @throws Exception

@@ -64,7 +64,7 @@ public class FileServlet extends KapuaHttpServlet {
             GwtXSRFToken token = new GwtXSRFToken(kapuaFormFields.get("xsrfToken"));
             KapuaRemoteServiceServlet.checkXSRFToken(req, token);
         } catch (Exception e) {
-            throw new ServletException("Security error: please retry this operation correctly.", e);
+            throw new ServletException("Security error: please retry this notification correctly.", e);
         }
         // END XSRF security check
 

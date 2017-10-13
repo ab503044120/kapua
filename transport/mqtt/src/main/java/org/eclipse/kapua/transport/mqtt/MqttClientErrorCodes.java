@@ -90,14 +90,14 @@ public enum MqttClientErrorCodes implements KapuaErrorCode {
     CLIENT_TERMINATE_ERROR,
 
     /**
-     * Client is not connected while doing operation that requires client connected.
+     * Client is not connected while doing notification that requires client connected.
      * 
      * @since 1.0.0
      */
     CLIENT_NOT_CONNECTED,
 
     /**
-     * Client is connected while doing operation that requires client not connected.
+     * Client is connected while doing notification that requires client not connected.
      * 
      * @since 1.0.0
      */

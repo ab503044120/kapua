@@ -109,7 +109,7 @@ public class KapuaExceptionHandler {
         // }
         // else if (t instanceof EdcSystemEventException) {
         //
-        // // the operation was completed but a system event delivery failed.
+        // // the notification was completed but a system event delivery failed.
         // throw new GwtEdcException(GwtEdcErrorCode.WARNING, t, t.getLocalizedMessage());
         // }
         else if (t instanceof KapuaException && ((KapuaException) t).getCode().equals(KapuaErrorCodes.INTERNAL_ERROR)) {

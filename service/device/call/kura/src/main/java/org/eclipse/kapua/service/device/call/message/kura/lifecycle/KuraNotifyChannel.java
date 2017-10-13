@@ -11,15 +11,20 @@
  *******************************************************************************/
 package org.eclipse.kapua.service.device.call.message.kura.lifecycle;
 
-import org.eclipse.kapua.service.device.call.message.kura.KuraChannel;
+import org.eclipse.kapua.service.device.call.message.app.kura.KuraAppChannel;
 
 /**
  * Kura device notification message channel implementation.
  *
  * @since 1.0
- *
  */
-public class KuraNotifyChannel extends KuraChannel {
+public class KuraNotifyChannel extends KuraAppChannel {
+
+    private String senderClientId;
+
+    private String notifyPart;
+
+    private String resources;
 
     /**
      * Constructor
@@ -30,24 +35,41 @@ public class KuraNotifyChannel extends KuraChannel {
     /**
      * Constructor
      *
-     * @param scopeNamespace
-     * @param clientId
+     * @param kuraTopicTokens
      */
-    public KuraNotifyChannel(String scopeNamespace, String clientId) {
-        this(null, scopeNamespace, clientId);
+    public KuraNotifyChannel(String[] kuraTopicTokens) {
+        super();
+
+        setMessageClassification(kuraTopicTokens[0]);
+        setScope(kuraTopicTokens[1]);
+        setClientId(kuraTopicTokens[2]);
+        setAppId(kuraTopicTokens[3]);
+        setNotifyPart(kuraTopicTokens[4]);
+        setSenderClientId(kuraTopicTokens[5]);
+        setResources(kuraTopicTokens[6]);
     }
 
-    /**
-     * Constructor
-     *
-     * @param messageClassification
-     * @param scopeNamespace
-     * @param clientId
-     */
-    public KuraNotifyChannel(String messageClassification, String scopeNamespace, String clientId) {
-        this.messageClassification = messageClassification;
-        this.scopeNamespace = scopeNamespace;
-        this.clientId = clientId;
+    public String getSenderClientId() {
+        return senderClientId;
     }
 
+    public void setSenderClientId(String senderClientId) {
+        this.senderClientId = senderClientId;
+    }
+
+    public String getNotifyPart() {
+        return notifyPart;
+    }
+
+    public void setNotifyPart(String notifyPart) {
+        this.notifyPart = notifyPart;
+    }
+
+    public String getResources() {
+        return resources;
+    }
+
+    public void setResources(String resources) {
+        this.resources = resources;
+    }
 }

@@ -49,7 +49,7 @@ public class DeviceManagementSnapshots extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation
+     *            The timeout of the notification
      * @return The list of Snapshot Ids.
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -61,7 +61,7 @@ public class DeviceManagementSnapshots extends AbstractKapuaResource {
     public DeviceSnapshots get(
             @ApiParam(value = "The ScopeId of the device", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation", required = false) @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification", required = false) @QueryParam("timeout") Long timeout) throws Exception {
         return snapshotService.get(scopeId, deviceId, timeout);
     }
 
@@ -75,8 +75,8 @@ public class DeviceManagementSnapshots extends AbstractKapuaResource {
      * @param snapshotId
      *            the ID of the snapshot to rollback to.
      * @param timeout
-     *            The timeout of the operation
-     * @return HTTP 200 if operation has completed successfully.
+     *            The timeout of the notification
+     * @return HTTP 200 if notification has completed successfully.
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
      * @since 1.0.0
@@ -89,7 +89,7 @@ public class DeviceManagementSnapshots extends AbstractKapuaResource {
             @ApiParam(value = "The ScopeId of the device", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
             @ApiParam(value = "the ID of the snapshot to rollback to", required = true) @PathParam("snapshotId") String snapshotId,
-            @ApiParam(value = "The timeout of the operation") @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification") @QueryParam("timeout") Long timeout) throws Exception {
         snapshotService.rollback(scopeId, deviceId, snapshotId, timeout);
 
         return returnOk();

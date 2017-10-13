@@ -25,7 +25,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Jms session wrapper.<BR>
- * This class wrap a single session per connection and manage the close operation of connection on session close.<BR>
+ * This class wrap a single session per connection and manage the close notification of connection on session close.<BR>
  * The connection is taken from a connection pool ({@link org.apache.activemq.ActiveMQConnectionFactory})
  * 
  * @since 1.0

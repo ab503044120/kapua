@@ -51,7 +51,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @return The list of Assets
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -63,7 +63,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
     public DeviceAssets get(
             @ApiParam(value = "The ScopeId of the device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
         return get(scopeId, deviceId, timeout, deviceAssetFilter.newAssetListResult());
     }
 
@@ -75,7 +75,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @return The list of Assets
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -87,7 +87,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
     public DeviceAssets get(
             @ApiParam(value = "The ScopeId of the device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout,
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout,
             @ApiParam(value = "The filter of the request") DeviceAssets deviceAssetFilter) throws Exception {
         return deviceManagementAssetService.get(scopeId, deviceId, deviceAssetFilter, timeout);
     }
@@ -100,7 +100,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @return The list of Assets
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -113,7 +113,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
     public DeviceAssets read(
             @ApiParam(value = "The ScopeId of the device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout,
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout,
             @ApiParam(value = "The filter of the read request") DeviceAssets deviceAssetFilter) throws Exception {
         return deviceManagementAssetService.read(scopeId, deviceId, deviceAssetFilter, timeout);
     }
@@ -126,7 +126,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @return The list of Assets
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -139,7 +139,7 @@ public class DeviceManagementAssets extends AbstractKapuaResource {
     public DeviceAssets write(
             @ApiParam(value = "The ScopeId of the device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout,
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout,
             @ApiParam(value = "The values to write to the asset channels") DeviceAssets deviceAssetFilter) throws Exception {
         return deviceManagementAssetService.write(scopeId, deviceId, deviceAssetFilter, timeout);
     }

@@ -32,7 +32,7 @@ public interface Data extends Sender {
      *
      * @param handler
      *            the handler which should process received messages
-     * @return a {@link CompletionStage} for the operation
+     * @return a {@link CompletionStage} for the notification
      * @throws Exception
      *             if anything goes wrong on the subscription process
      */
@@ -51,7 +51,7 @@ public interface Data extends Sender {
      * @param errorHandler
      *            the handler which should process received messages which got received
      *            but could not be properly parsed
-     * @return a {@link CompletionStage} for the operation
+     * @return a {@link CompletionStage} for the notification
      * @throws Exception
      *             if anything goes wrong on the subscription process
      */

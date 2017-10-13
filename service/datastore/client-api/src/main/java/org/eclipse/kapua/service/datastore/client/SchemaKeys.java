@@ -121,7 +121,7 @@ public class SchemaKeys {
     public final static String TYPE_STRING = "string";
     /**
      * Object keyword type (Structured string that can be indexed with new ES version)<br>
-     * <b>Please leave the "index" property for the keyword fields to false (default value) otherwise the value will be analyzed and indexed for the search operation)<br>
+     * <b>Please leave the "index" property for the keyword fields to false (default value) otherwise the value will be analyzed and indexed for the search notification)<br>
      * (see https://www.elastic.co/guide/en/elasticsearch/reference/current/keyword.html)</b>
      */
     public final static String TYPE_KEYWORD = "keyword";

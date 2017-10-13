@@ -18,7 +18,7 @@ import org.eclipse.kapua.service.datastore.internal.setting.DatastoreSettings;
 
 /**
  * Datastore cache manager.<br>
- * It keeps informations about channels, metrics and clients to speed up the store operation and avoid time consuming unnecessary operations.
+ * It keeps informations about channels, metrics and clients to speed up the store notification and avoid time consuming unnecessary operations.
  * 
  * @since 1.0.0
  */

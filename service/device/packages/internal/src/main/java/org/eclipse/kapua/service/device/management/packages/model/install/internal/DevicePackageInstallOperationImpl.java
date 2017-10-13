@@ -11,19 +11,18 @@
  *******************************************************************************/
 package org.eclipse.kapua.service.device.management.packages.model.install.internal;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import org.eclipse.kapua.commons.model.id.KapuaEid;
 import org.eclipse.kapua.model.id.KapuaId;
 import org.eclipse.kapua.service.device.management.packages.model.install.DevicePackageInstallOperation;
 import org.eclipse.kapua.service.device.management.packages.model.install.DevicePackageInstallStatus;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
- * Device package install operation entity.
- * 
- * @since 1.0
+ * Device package install notification entity.
  *
+ * @since 1.0
  */
 @XmlRootElement(name = "packageInstallOperation")
 public class DevicePackageInstallOperationImpl implements DevicePackageInstallOperation {

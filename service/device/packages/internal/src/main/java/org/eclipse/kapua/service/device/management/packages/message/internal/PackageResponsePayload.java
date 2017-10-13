@@ -18,15 +18,14 @@ import org.eclipse.kapua.service.device.management.packages.model.download.Devic
 
 /**
  * Package response message payload.
- * 
- * @since 1.0
  *
+ * @since 1.0
  */
 public class PackageResponsePayload extends KapuaResponsePayloadImpl implements KapuaPayload {
 
     /**
-     * Set the package download operation identifier
-     * 
+     * Set the package download notification identifier
+     *
      * @param operationId
      */
     public void setPackageDownloadOperationId(KapuaId operationId) {
@@ -36,8 +35,8 @@ public class PackageResponsePayload extends KapuaResponsePayloadImpl implements 
     }
 
     /**
-     * Get the package download operation identifier
-     * 
+     * Get the package download notification identifier
+     *
      * @return
      */
     public KapuaId getPackageDownloadOperationId() {
@@ -45,8 +44,8 @@ public class PackageResponsePayload extends KapuaResponsePayloadImpl implements 
     }
 
     /**
-     * Set the package download operation status
-     * 
+     * Set the package download notification status
+     *
      * @param status
      */
     public void setPackageDownloadOperationStatus(DevicePackageDownloadStatus status) {
@@ -56,8 +55,8 @@ public class PackageResponsePayload extends KapuaResponsePayloadImpl implements 
     }
 
     /**
-     * Get the package download operation status
-     * 
+     * Get the package download notification status
+     *
      * @return
      */
     public DevicePackageDownloadStatus getPackageDownloadOperationStatus() {
@@ -66,7 +65,7 @@ public class PackageResponsePayload extends KapuaResponsePayloadImpl implements 
 
     /**
      * Get the package download size
-     * 
+     *
      * @param size
      */
     public void setPackageDownloadOperationSize(Integer size) {
@@ -77,7 +76,7 @@ public class PackageResponsePayload extends KapuaResponsePayloadImpl implements 
 
     /**
      * Set the package download size
-     * 
+     *
      * @return
      */
     public Integer getPackageDownloadOperationSize() {
@@ -86,7 +85,7 @@ public class PackageResponsePayload extends KapuaResponsePayloadImpl implements 
 
     /**
      * Set the package download progress
-     * 
+     *
      * @param progress
      */
     public void setPackageDownloadOperationProgress(Integer progress) {
@@ -97,7 +96,7 @@ public class PackageResponsePayload extends KapuaResponsePayloadImpl implements 
 
     /**
      * Get the package download progress
-     * 
+     *
      * @return
      */
     public Integer getPackageDownloadOperationProgress() {

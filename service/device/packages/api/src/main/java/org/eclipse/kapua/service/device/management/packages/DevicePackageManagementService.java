@@ -24,15 +24,14 @@ import org.eclipse.kapua.service.device.management.packages.model.uninstall.Devi
 
 /**
  * Device package service definition.
- * 
- * @since 1.0
  *
+ * @since 1.0
  */
 public interface DevicePackageManagementService extends KapuaService {
 
     /**
      * Get the installed packages list
-     * 
+     *
      * @param scopeId
      * @param deviceId
      * @param timeout
@@ -43,8 +42,8 @@ public interface DevicePackageManagementService extends KapuaService {
             throws KapuaException;
 
     /**
-     * Starts a download package operation
-     * 
+     * Starts a download package notification
+     *
      * @param scopeId
      * @param deviceId
      * @param packageDownloadRequest
@@ -55,8 +54,8 @@ public interface DevicePackageManagementService extends KapuaService {
             throws KapuaException;
 
     /**
-     * Interrupt a download package operation
-     * 
+     * Interrupt a download package notification
+     *
      * @param scopeId
      * @param deviceId
      * @param timeout
@@ -67,7 +66,7 @@ public interface DevicePackageManagementService extends KapuaService {
 
     /**
      * Gets the download package status
-     * 
+     *
      * @param scopeId
      * @param deviceId
      * @param timeout
@@ -79,7 +78,7 @@ public interface DevicePackageManagementService extends KapuaService {
 
     /**
      * Installs a package
-     * 
+     *
      * @param scopeId
      * @param deviceId
      * @param packageInstallRequest
@@ -91,7 +90,7 @@ public interface DevicePackageManagementService extends KapuaService {
 
     /**
      * Gets the package installation status
-     * 
+     *
      * @param scopeId
      * @param deviceId
      * @param timeout
@@ -103,7 +102,7 @@ public interface DevicePackageManagementService extends KapuaService {
 
     /**
      * Uninstalls a package
-     * 
+     *
      * @param scopeId
      * @param deviceId
      * @param packageUninstallRequest
@@ -115,7 +114,7 @@ public interface DevicePackageManagementService extends KapuaService {
 
     /**
      * Gets the package uninstallation status
-     * 
+     *
      * @param scopeId
      * @param deviceId
      * @param timeout

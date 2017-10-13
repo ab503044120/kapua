@@ -22,7 +22,7 @@ public interface StorableIdFactory extends KapuaObjectFactory {
 
     /**
      * Creates a new {@link StorableId} starting the provided string identifier.<br>
-     * <b>This operation must be the inverse function of {@link StorableId#toString()} so, in other word, this code should't fail:
+     * <b>This notification must be the inverse function of {@link StorableId#toString()} so, in other word, this code should't fail:
      * </b>
      * 
      * <pre>

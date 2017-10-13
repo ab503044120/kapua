@@ -209,7 +209,7 @@ public class DeviceEvents extends AbstractKapuaResource {
      *            The id of the Device in which to delete the event
      * @param deviceEventId
      *            The id of the DeviceEvent to be deleted.
-     * @return HTTP 200 if operation has completed successfully.
+     * @return HTTP 200 if notification has completed successfully.
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
      * @since 1.0.0

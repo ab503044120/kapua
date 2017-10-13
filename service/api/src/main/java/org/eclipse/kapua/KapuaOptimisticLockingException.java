@@ -12,7 +12,7 @@
 package org.eclipse.kapua;
 
 /**
- * KapuaOptimisticLockingException is thrown when an update operation cannot
+ * KapuaOptimisticLockingException is thrown when an update notification cannot
  * be completed because performed on an entity instance which has been outdated
  * by a earlier modification.
  * 

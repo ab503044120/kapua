@@ -199,7 +199,7 @@ public class DatastoreMediator implements MessageStoreMediator,
             ClientException {
         // nothing to do at the present
         // the datastore coherence will be guarantee by a periodic task that will scan the datastore looking for a no more referenced info registry record
-        // otherwise the computational cost for each delete operation will be too high
+        // otherwise the computational cost for each delete notification will be too high
     }
 
     /*
@@ -214,14 +214,14 @@ public class DatastoreMediator implements MessageStoreMediator,
             ClientException {
         // nothing to do at the present
         // the datastore coherence will be guarantee by a periodic task that will scan the datastore looking for a no more referenced info registry record
-        // otherwise the computational cost for each delete operation will be too high
+        // otherwise the computational cost for each delete notification will be too high
     }
 
     @Override
     public void onAfterChannelInfoDelete(ChannelInfo channelInfo) {
         // nothing to do at the present
         // the datastore coherence will be guarantee by a periodic task that will scan the datastore looking for a no more referenced info registry record
-        // otherwise the computational cost for each delete operation will be too high
+        // otherwise the computational cost for each delete notification will be too high
     }
 
     /*
@@ -232,7 +232,7 @@ public class DatastoreMediator implements MessageStoreMediator,
     public void onAfterMetricInfoDelete(KapuaId scopeId, MetricInfo metricInfo) {
         // nothing to do at the present
         // the datastore coherence will be guarantee by a periodic task that will scan the datastore looking for a no more referenced info registry record
-        // otherwise the computational cost for each delete operation will be too high
+        // otherwise the computational cost for each delete notification will be too high
     }
 
     public void refreshAllIndexes() throws ClientException {

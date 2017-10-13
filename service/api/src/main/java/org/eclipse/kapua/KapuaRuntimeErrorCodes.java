@@ -23,7 +23,7 @@ public enum KapuaRuntimeErrorCodes implements KapuaErrorCode {
      */
     SERVICE_LOCATOR_UNAVAILABLE,
     /**
-     * Service operation non supported
+     * Service notification non supported
      */
     SERVICE_OPERATION_NOT_SUPPORTED,
 

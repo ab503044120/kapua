@@ -51,7 +51,7 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @return The requested configurations
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -63,7 +63,7 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
     public DeviceConfiguration get(
             @ApiParam(value = "The ScopeId of the Device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
         return getComponent(scopeId, deviceId, null, timeout);
     }
 
@@ -75,10 +75,10 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @param deviceConfiguration
      *            The configuration to send to the {@link Device}
-     * @return The {@link Response} of the operation
+     * @return The {@link Response} of the notification
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
      * @since 1.0.0
@@ -89,7 +89,7 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
     public Response update(
             @ApiParam(value = "The ScopeId of the Device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout,
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout,
             @ApiParam(value = "The configuration to send to the device", required = true) DeviceConfiguration deviceConfiguration) throws Exception {
         configurationService.put(scopeId, deviceId, deviceConfiguration, timeout);
 
@@ -110,7 +110,7 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
      * @param componentId
      *            An optional id of the component to get the configuration for
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @return The requested configurations
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -128,7 +128,7 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
             @ApiParam(value = "The ScopeId of the Device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
             @ApiParam(value = "An optional id of the component to get the configuration for", required = false) @PathParam("componentId") String componentId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
         return configurationService.get(scopeId, deviceId, null, componentId, timeout);
     }
 
@@ -146,7 +146,7 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
      * @param componentId
      *            An optional id of the component to get the configuration for
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @param deviceComponentConfiguration
      *            The component configuration to send to the {@link Device}
      * @return The requested configurations
@@ -162,7 +162,7 @@ public class DeviceManagementConfigurations extends AbstractKapuaResource {
             @ApiParam(value = "The ScopeId of the Device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
             @ApiParam(value = "The component id to update", required = true) @PathParam("componentId") String componentId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout,
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout,
             @ApiParam(value = "The component configuration to send to the device", required = true) DeviceComponentConfiguration deviceComponentConfiguration) throws Exception {
         deviceComponentConfiguration.setId(componentId);
 

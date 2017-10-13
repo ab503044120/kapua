@@ -112,7 +112,7 @@ public class GeneratorScheduler implements AutoCloseable {
         // add it
         this.tasks.add(entry);
 
-        // return remove operation
+        // return remove notification
         return new Handle() {
 
             private final AtomicBoolean removed = new AtomicBoolean(false);

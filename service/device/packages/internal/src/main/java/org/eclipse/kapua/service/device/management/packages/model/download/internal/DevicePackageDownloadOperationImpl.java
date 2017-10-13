@@ -11,19 +11,18 @@
  *******************************************************************************/
 package org.eclipse.kapua.service.device.management.packages.model.download.internal;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
-
 import org.eclipse.kapua.commons.model.id.KapuaEid;
 import org.eclipse.kapua.model.id.KapuaId;
 import org.eclipse.kapua.service.device.management.packages.model.download.DevicePackageDownloadOperation;
 import org.eclipse.kapua.service.device.management.packages.model.download.DevicePackageDownloadStatus;
 
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
- * Device download package operation entity.
- * 
- * @since 1.0
+ * Device download package notification entity.
  *
+ * @since 1.0
  */
 @XmlRootElement(name = "packageDownloadOperation")
 public class DevicePackageDownloadOperationImpl implements DevicePackageDownloadOperation {

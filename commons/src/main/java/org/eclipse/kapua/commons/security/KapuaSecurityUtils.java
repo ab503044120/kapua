@@ -12,16 +12,16 @@
  *******************************************************************************/
 package org.eclipse.kapua.commons.security;
 
-import java.util.concurrent.Callable;
-
 import org.eclipse.kapua.KapuaException;
 import org.eclipse.kapua.commons.util.ThrowingRunnable;
 import org.eclipse.kapua.model.id.KapuaId;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.concurrent.Callable;
+
 /**
- * Kapua security utility to handle the bind/unbind operation of the Kapua session into the thread context.
+ * Kapua security utility to handle the bind/unbind notification of the Kapua session into the thread context.
  *
  * @since 1.0
  */
@@ -65,8 +65,7 @@ public class KapuaSecurityUtils {
      * Execute the {@link Runnable} in a privileged context.<br>
      * Trusted mode means that checks for permissions and role will pass.
      *
-     * @param runnable
-     *            The {@link ThrowingRunnable} action to be executed.
+     * @param runnable The {@link ThrowingRunnable} action to be executed.
      * @throws KapuaException
      */
     public static void doPrivileged(final ThrowingRunnable runnable) throws KapuaException {
@@ -85,8 +84,7 @@ public class KapuaSecurityUtils {
      * Execute the {@link Callable} in a privileged context.<br>
      * Trusted mode means that checks for permissions and role will pass.
      *
-     * @param privilegedAction
-     *            The {@link Callable} action to be executed.
+     * @param privilegedAction The {@link Callable} action to be executed.
      * @return The result of the {@link Callable} action.
      * @throws KapuaException
      * @since 1.0.0

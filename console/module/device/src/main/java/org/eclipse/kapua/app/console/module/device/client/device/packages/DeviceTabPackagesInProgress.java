@@ -106,7 +106,7 @@ public class DeviceTabPackagesInProgress extends TabItem {
         };
 
         ColumnConfig column = new ColumnConfig();
-        column.setId("operation");
+        column.setId("notification");
         column.setHeader(MSGS.deviceInstallTabInProgressTableOperation());
         column.setAlignment(HorizontalAlignment.CENTER);
         column.setWidth(60);

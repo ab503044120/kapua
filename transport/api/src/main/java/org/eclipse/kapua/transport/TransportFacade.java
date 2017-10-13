@@ -39,7 +39,7 @@ public interface TransportFacade<C extends TransportChannel, P extends Transport
      * </p>
      *
      * @param message The request message to send.
-     * @param timeout The timeout for the operation.
+     * @param timeout The timeout for the notification.
      * @return The response to the request message.
      * @throws KapuaException FIXME [javadoc] document exception
      * @since 1.0.0

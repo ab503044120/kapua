@@ -11,18 +11,17 @@
  *******************************************************************************/
 package org.eclipse.kapua.service.device.management.packages.model.uninstall.internal;
 
-import javax.xml.bind.annotation.XmlElement;
-
 import org.eclipse.kapua.commons.model.id.KapuaEid;
 import org.eclipse.kapua.model.id.KapuaId;
 import org.eclipse.kapua.service.device.management.packages.model.uninstall.DevicePackageUninstallOperation;
 import org.eclipse.kapua.service.device.management.packages.model.uninstall.DevicePackageUninstallStatus;
 
+import javax.xml.bind.annotation.XmlElement;
+
 /**
- * Device package uninstall operation entity.
- * 
- * @since 1.0
+ * Device package uninstall notification entity.
  *
+ * @since 1.0
  */
 public class DevicePackageUninstallOperationImpl implements DevicePackageUninstallOperation {
 

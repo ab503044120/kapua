@@ -74,7 +74,7 @@ public class MetricInfoRegistryFacade {
     }
 
     /**
-     * Update the metric information after a message store operation (for a single metric)
+     * Update the metric information after a message store notification (for a single metric)
      * 
      * @param metricInfo
      * @return
@@ -119,7 +119,7 @@ public class MetricInfoRegistryFacade {
     }
 
     /**
-     * Update the metrics informations after a message store operation (for few metrics)
+     * Update the metrics informations after a message store notification (for few metrics)
      * 
      * @param metricInfos
      * @return

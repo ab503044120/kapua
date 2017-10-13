@@ -23,60 +23,61 @@ import org.eclipse.kapua.service.device.management.packages.model.uninstall.Devi
 
 /**
  * Device package service definition.
- * 
- * @since 1.0
  *
+ * @since 1.0
  */
 public interface DevicePackageFactory extends KapuaObjectFactory {
 
     /**
      * Creates a new {@link DevicePackages}
-     * 
+     *
      * @return
      */
     public DevicePackages newDeviceDeploymentPackages();
 
     /**
      * Creates a new {@link DevicePackage}
-     * 
+     *
      * @return
      */
     public DevicePackage newDeviceDeploymentPackage();
 
     /**
      * Creates a new device package bundle information
-     * 
+     *
      * @return
      */
     public DevicePackageBundleInfo newDevicePackageBundleInfo();
 
     /**
      * Creates a new device package bundle informations
-     * 
+     *
      * @return
      */
     public DevicePackageBundleInfos newDevicePackageBundleInfos();
 
     //
-    // Download operation
+    // Download notification
     //
+
     /**
      * Creates a new device package download request
-     * 
+     *
      * @return
      */
     public DevicePackageDownloadRequest newPackageDownloadRequest();
 
     /**
-     * Creates a new device package download operation
-     * 
+     * Creates a new device package download notification
+     *
      * @return
      */
     public DevicePackageDownloadOperation newPackageDownloadOperation();
 
     //
-    // Install operation
+    // Install notification
     //
+
     /**
      * Creates a new {@link DevicePackageInstallRequest}
      *
@@ -85,11 +86,12 @@ public interface DevicePackageFactory extends KapuaObjectFactory {
     public DevicePackageInstallRequest newPackageInstallRequest();
 
     //
-    // Uninstall operation
+    // Uninstall notification
     //
+
     /**
      * Creates a new device package uninstall request
-     * 
+     *
      * @return
      */
     public DevicePackageUninstallRequest newPackageUninstallRequest();

@@ -72,7 +72,7 @@ public class ClientInfoRegistryFacade {
     }
 
     /**
-     * Update the client information after a message store operation
+     * Update the client information after a message store notification
      * 
      * @param clientInfo
      * @return

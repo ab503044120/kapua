@@ -32,9 +32,8 @@ import org.eclipse.kapua.service.device.management.packages.model.uninstall.inte
 
 /**
  * Device package service implementation.
- * 
- * @since 1.0
  *
+ * @since 1.0
  */
 @KapuaProvider
 public class DevicePackageFactoryImpl implements DevicePackageFactory {
@@ -60,7 +59,7 @@ public class DevicePackageFactoryImpl implements DevicePackageFactory {
     }
 
     //
-    // Download operation
+    // Download notification
     //
     @Override
     public DevicePackageDownloadRequest newPackageDownloadRequest() {
@@ -73,7 +72,7 @@ public class DevicePackageFactoryImpl implements DevicePackageFactory {
     }
 
     //
-    // Install operation
+    // Install notification
     //
     @Override
     public DevicePackageInstallRequest newPackageInstallRequest() {
@@ -81,7 +80,7 @@ public class DevicePackageFactoryImpl implements DevicePackageFactory {
     }
 
     //
-    // Uninstall operation
+    // Uninstall notification
     //
     @Override
     public DevicePackageUninstallRequest newPackageUninstallRequest() {

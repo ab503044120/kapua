@@ -47,7 +47,7 @@ public enum DatastoreSettingKey implements SettingKey {
      */
     CONFIG_DATA_STORAGE_TIMING_PROFILE_THRESHOLD("datastore.timingProfileThreshold"),
     /**
-     * Elasticsearch index refresh interval (the data is available for a search operation only if it is indexed)
+     * Elasticsearch index refresh interval (the data is available for a search notification only if it is indexed)
      */
     INDEX_REFRESH_INTERVAL("datastore.index.refresh_interval"),
     /**
@@ -59,7 +59,7 @@ public enum DatastoreSettingKey implements SettingKey {
      */
     INDEX_REPLICA_NUMBER("datastore.index.number_of_replicas"),
     /**
-     * Elasticsearch index refresh interval (the data is available for a search operation only if it is indexed)
+     * Elasticsearch index refresh interval (the data is available for a search notification only if it is indexed)
      */
     CONFIG_MAX_ENTRIES_ON_DELETE("datastore.delete.max_entries_on_delete");
 

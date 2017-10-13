@@ -49,7 +49,7 @@ public class DeviceManagementBundles extends AbstractKapuaResource {
      * @param deviceId
      *            The id of the device
      * @param timeout
-     *            The timeout of the operation in milliseconds
+     *            The timeout of the notification in milliseconds
      * @return The list of Bundles
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
@@ -61,7 +61,7 @@ public class DeviceManagementBundles extends AbstractKapuaResource {
     public DeviceBundles get(
             @ApiParam(value = "The ScopeId of the device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
         return bundleService.get(scopeId, deviceId, timeout);
     }
 
@@ -75,8 +75,8 @@ public class DeviceManagementBundles extends AbstractKapuaResource {
      * @param bundleId
      *            the ID of the bundle to start
      * @param timeout
-     *            The timeout of the operation in milliseconds
-     * @return HTTP 200 if operation has completed successfully.
+     *            The timeout of the notification in milliseconds
+     * @return HTTP 200 if notification has completed successfully.
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
      * @since 1.0.0
@@ -89,7 +89,7 @@ public class DeviceManagementBundles extends AbstractKapuaResource {
             @ApiParam(value = "The ScopeId of the device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
             @ApiParam(value = "the ID of the bundle to start", required = true) @PathParam("bundleId") String bundleId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
         bundleService.start(scopeId, deviceId, bundleId, timeout);
 
         return returnOk();
@@ -102,7 +102,7 @@ public class DeviceManagementBundles extends AbstractKapuaResource {
      *            The {@link Device} ID.
      * @param bundleId
      *            the ID of the bundle to stop
-     * @return HTTP 200 if operation has completed successfully.
+     * @return HTTP 200 if notification has completed successfully.
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
      * @since 1.0.0
@@ -115,7 +115,7 @@ public class DeviceManagementBundles extends AbstractKapuaResource {
             @ApiParam(value = "The ScopeId of the device.", required = true, defaultValue = DEFAULT_SCOPE_ID) @PathParam("scopeId") ScopeId scopeId,
             @ApiParam(value = "The id of the device", required = true) @PathParam("deviceId") EntityId deviceId,
             @ApiParam(value = "the ID of the bundle to stop", required = true) @PathParam("bundleId") String bundleId,
-            @ApiParam(value = "The timeout of the operation in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
+            @ApiParam(value = "The timeout of the notification in milliseconds") @QueryParam("timeout") Long timeout) throws Exception {
         bundleService.stop(scopeId, deviceId, bundleId, timeout);
 
         return returnOk();

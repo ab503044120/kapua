@@ -15,9 +15,8 @@ import org.eclipse.kapua.service.device.management.KapuaAppProperties;
 
 /**
  * Device application properties definition.
- * 
- * @since 1.0
  *
+ * @since 1.0
  */
 public enum PackageAppProperties implements KapuaAppProperties {
 
@@ -34,7 +33,7 @@ public enum PackageAppProperties implements KapuaAppProperties {
     /**
      * Operation identifier
      */
-    APP_PROPERTY_PACKAGE_OPERATION_ID("kapua.package.operation.id"),
+    APP_PROPERTY_PACKAGE_OPERATION_ID("kapua.package.notification.id"),
     /**
      * Device reboot
      */
@@ -94,9 +93,7 @@ public enum PackageAppProperties implements KapuaAppProperties {
     /**
      * Package uninstall version
      */
-    APP_PROPERTY_PACKAGE_UNINSTALL_PACKAGE_VERSION("kapua.package.uninstall.version"),
-
-    ;
+    APP_PROPERTY_PACKAGE_UNINSTALL_PACKAGE_VERSION("kapua.package.uninstall.version"),;
 
     private String value;
 

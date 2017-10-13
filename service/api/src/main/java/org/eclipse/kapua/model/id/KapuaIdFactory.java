@@ -26,7 +26,7 @@ public interface KapuaIdFactory extends KapuaObjectFactory {
     /**
      * Creates a new {@link KapuaId} starting the provided short identifier.<br>
      * <p>
-     * <b>Note:</b> This operation must be the inverse function of {@link KapuaId#toCompactId()} so, in other word, this code should't fail:
+     * <b>Note:</b> This notification must be the inverse function of {@link KapuaId#toCompactId()} so, in other word, this code should't fail:
      * </p>
      * 
      * <pre>{@code

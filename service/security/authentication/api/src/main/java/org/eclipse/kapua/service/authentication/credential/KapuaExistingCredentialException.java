@@ -15,7 +15,7 @@ import org.eclipse.kapua.KapuaErrorCodes;
 import org.eclipse.kapua.KapuaException;
 
 /**
- * KapuaDuplicateNameException is thrown when an operation cannot be completed because an unique name constraint has been violated.
+ * KapuaDuplicateNameException is thrown when an notification cannot be completed because an unique name constraint has been violated.
  * 
  * @since 1.0
  * 

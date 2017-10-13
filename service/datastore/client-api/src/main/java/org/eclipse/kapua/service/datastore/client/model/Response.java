@@ -44,7 +44,7 @@ public abstract class Response implements KapuaSerializable {
     }
 
     /**
-     * Get the object id (the subject of the operation)
+     * Get the object id (the subject of the notification)
      * 
      * @return
      */
@@ -53,7 +53,7 @@ public abstract class Response implements KapuaSerializable {
     }
 
     /**
-     * Set the object id (the subject of the operation)
+     * Set the object id (the subject of the notification)
      * 
      * @param id
      */

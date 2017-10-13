@@ -232,7 +232,7 @@ public class Users extends AbstractKapuaResource {
      *            The ScopeId of the requested {@link User}.
      * @param userId
      *            The id of the User to be deleted.
-     * @return HTTP 200 if operation has completed successfully.
+     * @return HTTP 200 if notification has completed successfully.
      * @throws Exception
      *             Whenever something bad happens. See specific {@link KapuaService} exceptions.
      * @since 1.0.0

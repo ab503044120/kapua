@@ -23,6 +23,6 @@ public class ClientErrorMessages {
 
     }
 
-    public final static String CRUD_INTERNAL_ERROR = "An error occurred on performing the operation: [%s]";
+    public final static String CRUD_INTERNAL_ERROR = "An error occurred on performing the notification: [%s]";
 
 }

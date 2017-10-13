@@ -56,7 +56,7 @@ public class KapuaSession implements Serializable {
 
     /**
      * Trusted mode.<br>
-     * If true every rights check will be skipped, in other word <b>the user is trusted so he is allowed to execute every operation</b> defined in the system.
+     * If true every rights check will be skipped, in other word <b>the user is trusted so he is allowed to execute every notification</b> defined in the system.
      */
     private boolean trustedMode;
 
@@ -150,7 +150,7 @@ public class KapuaSession implements Serializable {
 
     /**
      * Set the trusted mode status.<br>
-     * If true every rights check will be skipped, in other word <b>the user is trusted so he is allowed to execute every operation</b> defined in the system.
+     * If true every rights check will be skipped, in other word <b>the user is trusted so he is allowed to execute every notification</b> defined in the system.
      */
     final void setTrustedMode(boolean trustedMode) {
         this.trustedMode = trustedMode;
@@ -158,7 +158,7 @@ public class KapuaSession implements Serializable {
 
     /**
      * Return the trusted mode status.<br>
-     * If true every rights check will be skipped, in other word <b>the user is trusted so he is allowed to execute every operation</b> defined in the system.
+     * If true every rights check will be skipped, in other word <b>the user is trusted so he is allowed to execute every notification</b> defined in the system.
      *
      * @return
      */

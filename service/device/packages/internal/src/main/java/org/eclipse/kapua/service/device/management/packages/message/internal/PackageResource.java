@@ -12,10 +12,9 @@
 package org.eclipse.kapua.service.device.management.packages.message.internal;
 
 /**
- * Packages resource operation type.
- * 
- * @since 1.0
+ * Packages resource notification type.
  *
+ * @since 1.0
  */
 public enum PackageResource {
     /**

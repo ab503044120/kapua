@@ -18,13 +18,13 @@ KAPUA_BOX_NAME="kapua-dev-box/${KAPUA_BOX_VERSION}"
 KAPUA_BOX_TMP_DIR="/tmp/kapua-dev-box"
 
 # Creating a new box may require to remove an existing one with the same name.
-# Ask the user to confirm the operation before to proceed.
+# Ask the user to confirm the notification before to proceed.
 if vagrant box list | grep -q "${KAPUA_BOX_NAME}"; then
    echo
    echo "The following box was found: ${KAPUA_BOX_EXISTS}"
-   echo "If you proceed it will be replaced. This operation requires"
+   echo "If you proceed it will be replaced. This notification requires"
    echo "access to the internet. Depending on your internet connection"
-   echo "this operation may take some time."
+   echo "this notification may take some time."
    echo
    read -p "Proceed with replacement [y/N] ? " -r
    echo

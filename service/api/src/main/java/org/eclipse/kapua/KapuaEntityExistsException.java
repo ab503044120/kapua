@@ -14,7 +14,7 @@ package org.eclipse.kapua;
 import org.eclipse.kapua.model.id.KapuaId;
 
 /**
- * KapuaEntityExistsException is thrown when an operation cannot be completed because an unique key constraint has been violated.
+ * KapuaEntityExistsException is thrown when an notification cannot be completed because an unique key constraint has been violated.
  * 
  * @since 1.0
  * 
@@ -30,7 +30,7 @@ public class KapuaEntityExistsException extends KapuaRuntimeException {
      * 
      * @param t
      * @param id
-     *            the key that conflicts on the insert operation (duplicated key)
+     *            the key that conflicts on the insert notification (duplicated key)
      */
     public KapuaEntityExistsException(Throwable t, KapuaId id) {
         super(KapuaErrorCodes.ENTITY_ALREADY_EXISTS, t);

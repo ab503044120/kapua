@@ -59,7 +59,7 @@ public class FailureHandler {
         } else if (caught instanceof StatusCodeException &&
                 ((StatusCodeException) caught).getStatusCode() == 0) {
 
-            // the current operation was interrupted as the user started a new one
+            // the current notification was interrupted as the user started a new one
             // or navigated away from the page.
             // we can ignore this error and do nothing.
         } else {

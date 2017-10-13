@@ -15,7 +15,7 @@ import org.eclipse.kapua.KapuaException;
 
 /**
  * Kapua locator exception.<br>
- * The exception is thrown if something wrong happens during service initialization operation done by the locator.
+ * The exception is thrown if something wrong happens during service initialization notification done by the locator.
  * 
  * @since 1.0
  *
